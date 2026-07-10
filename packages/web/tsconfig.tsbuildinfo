@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/router.tsx","./src/types.ts","./src/components/addform.tsx","./src/components/icons.tsx","./src/components/toggle.tsx","./src/components/torrentcard.tsx","./src/lib/api.ts","./src/lib/format.ts","./src/lib/torrents.ts","./src/routes/index.tsx","./src/routes/root.tsx","./src/routes/watch.tsx"],"version":"5.9.3"}

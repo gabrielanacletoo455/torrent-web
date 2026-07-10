@@ -1,0 +1,20 @@
+{
+  "name": "torrent-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Gerenciador de downloads de torrent — monorepo (server + web)",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "npm -w packages/server run dev",
+    "dev:web": "npm -w packages/web run dev",
+    "build": "npm -w packages/web run build",
+    "start": "npm -w packages/server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
